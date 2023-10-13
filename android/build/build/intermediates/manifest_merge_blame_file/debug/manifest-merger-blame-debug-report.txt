@@ -1,0 +1,159 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.godotengine.wirelesscameradesktop"
+4    android:installLocation="auto"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="19"
+10        android:targetSdkVersion="32" />
+11
+12    <supports-screens
+12-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\AndroidManifest.xml:12:5-16:40
+13        android:largeScreens="true"
+13-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\AndroidManifest.xml:15:9-36
+14        android:normalScreens="true"
+14-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\AndroidManifest.xml:14:9-37
+15        android:smallScreens="true"
+15-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\AndroidManifest.xml:13:9-36
+16        android:xlargeScreens="true" />
+16-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\AndroidManifest.xml:16:9-37
+17
+18    <uses-permission android:name="android.permission.CAMERA" />
+18-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\src\debug\AndroidManifest.xml:10:5-65
+18-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\src\debug\AndroidManifest.xml:10:22-62
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\src\debug\AndroidManifest.xml:11:5-67
+19-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\src\debug\AndroidManifest.xml:11:22-64
+20    <!-- glEsVersion is modified by the exporter, changing this value here has no effect. -->
+21    <uses-feature
+21-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\AndroidManifest.xml:19:5-21:35
+22        android:glEsVersion="0x00020000"
+22-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\AndroidManifest.xml:20:9-41
+23        android:required="true" />
+23-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\AndroidManifest.xml:21:9-32
+24
+25    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+25-->[GodotGetImage.release.aar] C:\Users\Tintepoxi\.gradle\caches\transforms-3\ac34f977f78051563330d82b457d0155\transformed\jetified-GodotGetImage.release\AndroidManifest.xml:11:5-80
+25-->[GodotGetImage.release.aar] C:\Users\Tintepoxi\.gradle\caches\transforms-3\ac34f977f78051563330d82b457d0155\transformed\jetified-GodotGetImage.release\AndroidManifest.xml:11:22-77
+26    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+26-->[GodotGetImage.release.aar] C:\Users\Tintepoxi\.gradle\caches\transforms-3\ac34f977f78051563330d82b457d0155\transformed\jetified-GodotGetImage.release\AndroidManifest.xml:12:5-81
+26-->[GodotGetImage.release.aar] C:\Users\Tintepoxi\.gradle\caches\transforms-3\ac34f977f78051563330d82b457d0155\transformed\jetified-GodotGetImage.release\AndroidManifest.xml:12:22-78
+27
+28    <uses-feature
+28-->[GodotGetImage.release.aar] C:\Users\Tintepoxi\.gradle\caches\transforms-3\ac34f977f78051563330d82b457d0155\transformed\jetified-GodotGetImage.release\AndroidManifest.xml:15:5-17:35
+29        android:name="android.hardware.camera"
+29-->[GodotGetImage.release.aar] C:\Users\Tintepoxi\.gradle\caches\transforms-3\ac34f977f78051563330d82b457d0155\transformed\jetified-GodotGetImage.release\AndroidManifest.xml:16:9-47
+30        android:required="true" />
+30-->[GodotGetImage.release.aar] C:\Users\Tintepoxi\.gradle\caches\transforms-3\ac34f977f78051563330d82b457d0155\transformed\jetified-GodotGetImage.release\AndroidManifest.xml:17:9-32
+31
+32    <application
+32-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\AndroidManifest.xml:30:5-94:19
+33        android:allowBackup="false"
+33-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\AndroidManifest.xml:30:68-95
+34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+34-->[androidx.core:core:1.2.0] C:\Users\Tintepoxi\.gradle\caches\transforms-3\086694f904f7332915774462ffe124fb\transformed\core-1.2.0\AndroidManifest.xml:24:18-86
+35        android:debuggable="true"
+36        android:hasFragileUserData="false"
+36-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\AndroidManifest.xml:30:118-152
+37        android:icon="@mipmap/icon"
+37-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\AndroidManifest.xml:30:238-265
+38        android:isGame="true"
+38-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\AndroidManifest.xml:30:96-117
+39        android:label="@string/godot_project_name_string"
+39-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\AndroidManifest.xml:30:18-67
+40        android:requestLegacyExternalStorage="false" >
+40-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\AndroidManifest.xml:30:153-197
+41        <activity
+41-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\AndroidManifest.xml:65:9-88:20
+42            android:name="com.godot.game.GodotApp"
+42-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\AndroidManifest.xml:66:13-37
+43            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|density|keyboard|navigation|screenLayout|uiMode"
+43-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\AndroidManifest.xml:73:13-141
+44            android:excludeFromRecents="false"
+44-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\AndroidManifest.xml:70:13-47
+45            android:exported="true"
+45-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\AndroidManifest.xml:71:13-36
+46            android:label="@string/godot_project_name_string"
+46-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\AndroidManifest.xml:67:13-62
+47            android:launchMode="singleTask"
+47-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\AndroidManifest.xml:69:13-44
+48            android:resizeableActivity="true"
+48-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\AndroidManifest.xml:74:13-47
+49            android:screenOrientation="landscape"
+49-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\AndroidManifest.xml:72:13-50
+50            android:theme="@style/GodotAppSplashTheme" >
+50-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\AndroidManifest.xml:68:13-55
+51            <intent-filter>
+51-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\AndroidManifest.xml:80:13-87:29
+52                <action android:name="android.intent.action.MAIN" />
+52-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\AndroidManifest.xml:81:17-69
+52-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\AndroidManifest.xml:81:25-66
+53
+54                <category android:name="android.intent.category.LAUNCHER" />
+54-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\AndroidManifest.xml:82:17-77
+54-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\AndroidManifest.xml:82:27-74
+55
+56                <!--
+57                Enable access to OpenXR on Oculus mobile devices, no-op on other Android
+58                platforms.
+59                -->
+60                <category android:name="com.oculus.intent.category.VR" />
+60-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\AndroidManifest.xml:86:17-74
+60-->C:\Users\Tintepoxi\Documents\Godot\wireless camera desktop\android\build\AndroidManifest.xml:86:27-71
+61            </intent-filter>
+62        </activity>
+63        <!-- Records the version of the Godot editor used for building -->
+64        <meta-data
+65            android:name="org.godotengine.editor.version"
+66            android:value="3.5.2.stable" /> <!-- Records the version of the Godot library -->
+67        <meta-data
+67-->[godot-lib.debug.aar] C:\Users\Tintepoxi\.gradle\caches\transforms-3\dd0c94d33606cd3ab83a61ee6628b223\transformed\jetified-godot-lib.debug\AndroidManifest.xml:14:9-16:44
+68            android:name="org.godotengine.library.version"
+68-->[godot-lib.debug.aar] C:\Users\Tintepoxi\.gradle\caches\transforms-3\dd0c94d33606cd3ab83a61ee6628b223\transformed\jetified-godot-lib.debug\AndroidManifest.xml:15:13-59
+69            android:value="3.5.2.stable" />
+69-->[godot-lib.debug.aar] C:\Users\Tintepoxi\.gradle\caches\transforms-3\dd0c94d33606cd3ab83a61ee6628b223\transformed\jetified-godot-lib.debug\AndroidManifest.xml:16:13-41
+70
+71        <service android:name="org.godotengine.godot.GodotDownloaderService" />
+71-->[godot-lib.debug.aar] C:\Users\Tintepoxi\.gradle\caches\transforms-3\dd0c94d33606cd3ab83a61ee6628b223\transformed\jetified-godot-lib.debug\AndroidManifest.xml:18:9-80
+71-->[godot-lib.debug.aar] C:\Users\Tintepoxi\.gradle\caches\transforms-3\dd0c94d33606cd3ab83a61ee6628b223\transformed\jetified-godot-lib.debug\AndroidManifest.xml:18:18-77
+72
+73        <activity
+73-->[godot-lib.debug.aar] C:\Users\Tintepoxi\.gradle\caches\transforms-3\dd0c94d33606cd3ab83a61ee6628b223\transformed\jetified-godot-lib.debug\AndroidManifest.xml:20:9-24:75
+74            android:name="org.godotengine.godot.utils.ProcessPhoenix"
+74-->[godot-lib.debug.aar] C:\Users\Tintepoxi\.gradle\caches\transforms-3\dd0c94d33606cd3ab83a61ee6628b223\transformed\jetified-godot-lib.debug\AndroidManifest.xml:21:13-70
+75            android:exported="false"
+75-->[godot-lib.debug.aar] C:\Users\Tintepoxi\.gradle\caches\transforms-3\dd0c94d33606cd3ab83a61ee6628b223\transformed\jetified-godot-lib.debug\AndroidManifest.xml:22:13-37
+76            android:process=":phoenix"
+76-->[godot-lib.debug.aar] C:\Users\Tintepoxi\.gradle\caches\transforms-3\dd0c94d33606cd3ab83a61ee6628b223\transformed\jetified-godot-lib.debug\AndroidManifest.xml:23:13-39
+77            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+77-->[godot-lib.debug.aar] C:\Users\Tintepoxi\.gradle\caches\transforms-3\dd0c94d33606cd3ab83a61ee6628b223\transformed\jetified-godot-lib.debug\AndroidManifest.xml:24:13-72
+78
+79        <meta-data
+79-->[GodotGetImage.release.aar] C:\Users\Tintepoxi\.gradle\caches\transforms-3\ac34f977f78051563330d82b457d0155\transformed\jetified-GodotGetImage.release\AndroidManifest.xml:20:9-22:78
+80            android:name="org.godotengine.plugin.v1.GodotGetImage"
+80-->[GodotGetImage.release.aar] C:\Users\Tintepoxi\.gradle\caches\transforms-3\ac34f977f78051563330d82b457d0155\transformed\jetified-GodotGetImage.release\AndroidManifest.xml:21:13-67
+81            android:value="com.gmail.lamelynx.godotgetimage.GodotGetImage" />
+81-->[GodotGetImage.release.aar] C:\Users\Tintepoxi\.gradle\caches\transforms-3\ac34f977f78051563330d82b457d0155\transformed\jetified-GodotGetImage.release\AndroidManifest.xml:22:13-75
+82
+83        <provider
+83-->[GodotGetImage.release.aar] C:\Users\Tintepoxi\.gradle\caches\transforms-3\ac34f977f78051563330d82b457d0155\transformed\jetified-GodotGetImage.release\AndroidManifest.xml:24:9-32:20
+84            android:name="androidx.core.content.FileProvider"
+84-->[GodotGetImage.release.aar] C:\Users\Tintepoxi\.gradle\caches\transforms-3\ac34f977f78051563330d82b457d0155\transformed\jetified-GodotGetImage.release\AndroidManifest.xml:25:13-62
+85            android:authorities="org.godotengine.wirelesscameradesktop"
+85-->[GodotGetImage.release.aar] C:\Users\Tintepoxi\.gradle\caches\transforms-3\ac34f977f78051563330d82b457d0155\transformed\jetified-GodotGetImage.release\AndroidManifest.xml:26:13-51
+86            android:exported="false"
+86-->[GodotGetImage.release.aar] C:\Users\Tintepoxi\.gradle\caches\transforms-3\ac34f977f78051563330d82b457d0155\transformed\jetified-GodotGetImage.release\AndroidManifest.xml:27:13-37
+87            android:grantUriPermissions="true" >
+87-->[GodotGetImage.release.aar] C:\Users\Tintepoxi\.gradle\caches\transforms-3\ac34f977f78051563330d82b457d0155\transformed\jetified-GodotGetImage.release\AndroidManifest.xml:28:13-47
+88            <meta-data
+88-->[GodotGetImage.release.aar] C:\Users\Tintepoxi\.gradle\caches\transforms-3\ac34f977f78051563330d82b457d0155\transformed\jetified-GodotGetImage.release\AndroidManifest.xml:29:13-31:63
+89                android:name="android.support.FILE_PROVIDER_PATHS"
+89-->[GodotGetImage.release.aar] C:\Users\Tintepoxi\.gradle\caches\transforms-3\ac34f977f78051563330d82b457d0155\transformed\jetified-GodotGetImage.release\AndroidManifest.xml:30:17-67
+90                android:resource="@xml/file_provider_paths" />
+90-->[GodotGetImage.release.aar] C:\Users\Tintepoxi\.gradle\caches\transforms-3\ac34f977f78051563330d82b457d0155\transformed\jetified-GodotGetImage.release\AndroidManifest.xml:31:17-60
+91        </provider>
+92    </application>
+93
+94</manifest>

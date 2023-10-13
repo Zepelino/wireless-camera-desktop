@@ -1,0 +1,146 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Mobile/scenes/Control.gd" type="Script" id=1]
+[ext_resource path="res://resources/Themes.tres" type="Theme" id=2]
+[ext_resource path="res://resources/images/camera.png" type="Texture" id=3]
+[ext_resource path="res://resources/images/gallery.png" type="Texture" id=4]
+[ext_resource path="res://addons/LANServerBroadcast/server_listener/ServerListener.gd" type="Script" id=5]
+[ext_resource path="res://resources/fonts/helvetica-rounded-bold-5871d05ead8de.otf" type="DynamicFontData" id=6]
+
+[sub_resource type="DynamicFont" id=2]
+size = 28
+outline_color = Color( 0.94902, 0.94902, 0.94902, 1 )
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 21
+outline_color = Color( 0.94902, 0.94902, 0.94902, 1 )
+font_data = ExtResource( 6 )
+
+[sub_resource type="Theme" id=1]
+
+[node name="Main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( -752, 300 )
+script = ExtResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.847059, 0.847059, 0.847059, 1 )
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+anchor_left = 0.294
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -0.0559998
+theme = ExtResource( 2 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 718.0
+margin_bottom = 595.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Container" type="Control" parent="."]
+anchor_right = 0.294
+anchor_bottom = 1.0
+margin_right = -0.0559998
+size_flags_horizontal = 3
+
+[node name="Add" type="Button" parent="Container"]
+anchor_left = 0.11
+anchor_top = 0.052
+anchor_right = 0.834
+anchor_bottom = 0.21
+margin_left = -0.110001
+margin_top = -0.200001
+margin_right = -0.0340118
+theme = ExtResource( 2 )
+custom_fonts/font = SubResource( 2 )
+text = "Tirar foto"
+icon = ExtResource( 3 )
+expand_icon = true
+
+[node name="Send" type="Button" parent="Container"]
+anchor_left = 0.11
+anchor_top = 0.853
+anchor_right = 0.874
+anchor_bottom = 0.943
+margin_left = -0.110001
+margin_top = 0.199982
+margin_right = -0.0740051
+margin_bottom = 0.200012
+theme = ExtResource( 2 )
+custom_fonts/font = SubResource( 3 )
+disabled = true
+text = "Enviar"
+expand_icon = true
+
+[node name="error_label" type="Label" parent="Container"]
+modulate = Color( 0.658824, 0.12549, 0.12549, 1 )
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -142.5
+margin_top = -174.0
+margin_right = 142.5
+margin_bottom = -83.0
+theme = SubResource( 1 )
+align = 1
+autowrap = true
+
+[node name="OptionButton" type="OptionButton" parent="Container"]
+anchor_left = 0.11
+anchor_top = 0.76
+anchor_right = 0.874
+anchor_bottom = 0.835
+margin_left = -0.110001
+margin_top = -3.05176e-05
+margin_right = -0.0740051
+margin_bottom = -3.05176e-05
+theme = ExtResource( 2 )
+custom_fonts/font = SubResource( 3 )
+disabled = true
+text = "Selecione o servidor"
+
+[node name="Add2" type="Button" parent="Container"]
+anchor_left = 0.11
+anchor_top = 0.23
+anchor_right = 0.834
+anchor_bottom = 0.375
+margin_left = -0.110001
+margin_right = -0.0340118
+margin_bottom = -1.52588e-05
+theme = ExtResource( 2 )
+custom_fonts/font = SubResource( 2 )
+text = "Galeria"
+icon = ExtResource( 4 )
+expand_icon = true
+
+[node name="server_finder" type="Node" parent="."]
+script = ExtResource( 5 )
+
+[node name="WindowDialog" type="WindowDialog" parent="."]
+margin_left = 225.0
+margin_top = 102.0
+margin_right = 772.0
+margin_bottom = 474.0
+
+[node name="TextEdit" type="TextEdit" parent="WindowDialog"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+readonly = true
+draw_tabs = true
+wrap_enabled = true
+
+[connection signal="button_up" from="Container/Add" to="." method="_on_Button_button_up"]
+[connection signal="button_up" from="Container/Send" to="." method="_on_Send_button_up"]
+[connection signal="item_selected" from="Container/OptionButton" to="." method="_on_OptionButton_item_selected"]
+[connection signal="button_up" from="Container/Add2" to="." method="_on_Add2_button_up"]
+[connection signal="new_server" from="server_finder" to="." method="_on_Node_new_server"]
+[connection signal="remove_server" from="server_finder" to="." method="_on_server_finder_remove_server"]

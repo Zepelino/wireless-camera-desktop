@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.godot.game-mergeDebugResources-10:/values-ja/values-ja.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Tintepoxi\\Documents\\Godot\\wireless camera desktop\\android\\build\\res\\values-ja\\godot_project_name_string.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "1",
+                        "startOffsets": "112",
+                        "endColumns": "74",
+                        "endOffsets": "185"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "77",
+                        "endOffsets": "128"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Tintepoxi\\.gradle\\caches\\transforms-3\\086694f904f7332915774462ffe124fb\\transformed\\core-1.2.0\\res\\values-ja\\values-ja.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "133",
+                        "endColumns": "100",
+                        "endOffsets": "229"
+                    }
+                }
+            ]
+        }
+    ]
+}
